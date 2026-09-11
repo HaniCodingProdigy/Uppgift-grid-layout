@@ -1,0 +1,36 @@
+html, body {height: 100%; margin: 0; padding: 0;}
+
+.item1 {grid-area: header;
+background-color:blanchedalmond; }
+.item2 {grid-area: main;
+background-color:blanchedalmond; }
+.item3 {grid-area: side;
+background-color:blanchedalmond; }
+.item4 {grid-area: footer;
+background-color:blanchedalmond; }
+
+
+
+
+.container {
+    gap: 10px;
+    display: grid;
+    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-columns: 1fr 8fr 4fr 1fr; 
+    grid-template-areas: 
+    "header header header header"
+    ". main side ."
+    "footer footer footer footer";
+}
+
+h1.stycket{
+    background-color:blanchedalmond;
+    color: black;
+    text-align: center;
+    font-size: 60px;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
